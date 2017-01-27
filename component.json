@@ -1,6 +1,6 @@
 {
-    "name": "advertising-listing",
-    "description": "advertising-listing component",
+    "name": "advertisements-listing",
+    "description": "advertisements-listing component",
     "local": [],
     "scripts": ["index.js"],
     "styles": ["styles.css"],
@@ -10,6 +10,6 @@
         "serandomps/dust": "master",
         "serandomps/serand": "master",
         "serandomps/utils": "master",
-        "serandomps/advertisement-service": "master"
+        "serandomps/advertisements-service": "master"
     }
 }
