@@ -2,10 +2,10 @@ var dust = require('dust')();
 var serand = require('serand');
 var utils = require('utils');
 
-dust.loadSource(dust.compile(require('./template'), 'advertisements-listing'));
+dust.loadSource(dust.compile(require('./template'), 'advertisements-find'));
 
 module.exports = function (sandbox, fn, options) {
-    dust.render('advertisements-listing', options, function (err, out) {
+    dust.render('advertisements-find', options, function (err, out) {
         sandbox.append(out);
         sandbox.on('click', '.edit', function (e) {
             serand.redirect($(this).closest('.thumbnail').attr('href') + '/edit');
@@ -15,7 +15,7 @@ module.exports = function (sandbox, fn, options) {
             return;
         }
         fn(false, function () {
-            $('.advertisements-listing', sandbox).remove();
+            $('.advertisements-find', sandbox).remove();
         });
     });
 };

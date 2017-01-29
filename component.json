@@ -1,6 +1,6 @@
 {
-    "name": "advertisements-listing",
-    "description": "advertisements-listing component",
+    "name": "advertisements-find",
+    "description": "advertisements-find component",
     "local": [],
     "scripts": ["index.js"],
     "styles": ["styles.css"],
