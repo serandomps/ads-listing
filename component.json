@@ -9,7 +9,6 @@
     "dependencies": {
         "serandomps/dust": "master",
         "serandomps/serand": "master",
-        "serandomps/utils": "master",
-        "serandomps/advertisements-service": "master"
+        "serandomps/utils": "master"
     }
 }
