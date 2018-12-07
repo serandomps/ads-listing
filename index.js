@@ -4,7 +4,8 @@ var utils = require('utils');
 
 dust.loadSource(dust.compile(require('./template'), 'advertisements-find'));
 
-module.exports = function (ctx, sandbox, options, done) {
+module.exports = function (ctx, container, options, done) {
+    var sandbox = container.sandbox;
     dust.render('advertisements-find', options, function (err, out) {
         sandbox.append(out);
         sandbox.on('click', '.edit', function (e) {
